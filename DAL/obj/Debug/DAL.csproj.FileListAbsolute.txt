@@ -1,0 +1,9 @@
+D:\Users\hasee\Source\Repos\StudentManage\DAL\bin\Debug\DAL.dll
+D:\Users\hasee\Source\Repos\StudentManage\DAL\bin\Debug\DAL.pdb
+D:\Users\hasee\Source\Repos\StudentManage\DAL\bin\Debug\Models.dll
+D:\Users\hasee\Source\Repos\StudentManage\DAL\bin\Debug\Models.pdb
+D:\Users\hasee\Source\Repos\StudentManage\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Users\hasee\Source\Repos\StudentManage\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Users\hasee\Source\Repos\StudentManage\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Users\hasee\Source\Repos\StudentManage\DAL\obj\Debug\DAL.dll
+D:\Users\hasee\Source\Repos\StudentManage\DAL\obj\Debug\DAL.pdb
