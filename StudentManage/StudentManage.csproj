@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{723A8B08-A47C-41C0-B920-E9E5095DAD17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StudentManage</RootNamespace>
+    <AssemblyName>StudentManage</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MyVideo">
+      <HintPath>..\..\..\..\..\..\C#视频教程\喜科堂.NET-Winform开发VIP课程\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本【带完整项目源码】\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本【带完整项目源码】\项目资料\StudentManagerPro2\StudentManager\bin\Debug\MyVideo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DataGridViewStyle.cs" />
+    <Compile Include="Common\DataValidate.cs" />
+    <Compile Include="Common\SerializeObjectToString.cs" />
+    <Compile Include="Common\StringSecurity.cs" />
+    <Compile Include="ExcelPrint\DataExport.cs" />
+    <Compile Include="ExcelPrint\PrintStudent.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddStudent.designer.cs">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttendance.designer.cs">
+      <DependentUpon>FrmAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttendanceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttendanceQuery.designer.cs">
+      <DependentUpon>FrmAttendanceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStudent.designer.cs">
+      <DependentUpon>FrmEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportData.designer.cs">
+      <DependentUpon>FrmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyPwd.designer.cs">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScoreManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScoreManage.designer.cs">
+      <DependentUpon>FrmScoreManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScoreQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScoreQuery.designer.cs">
+      <DependentUpon>FrmScoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentInfo.designer.cs">
+      <DependentUpon>FrmStudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentManage.designer.cs">
+      <DependentUpon>FrmStudentManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLogin.designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddStudent.resx">
+      <DependentUpon>FrmAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttendance.resx">
+      <DependentUpon>FrmAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttendanceQuery.resx">
+      <DependentUpon>FrmAttendanceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStudent.resx">
+      <DependentUpon>FrmEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportData.resx">
+      <DependentUpon>FrmImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyPwd.resx">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScoreManage.resx">
+      <DependentUpon>FrmScoreManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScoreQuery.resx">
+      <DependentUpon>FrmScoreQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentInfo.resx">
+      <DependentUpon>FrmStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentManage.resx">
+      <DependentUpon>FrmStudentManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{a587152a-761a-4c49-8233-4a50558a5a35}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{e0fc9f85-838c-4315-bb94-605c99d3587f}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
