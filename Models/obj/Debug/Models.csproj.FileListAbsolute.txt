@@ -1,0 +1,6 @@
+D:\Users\hasee\Source\Repos\StudentManage\Models\bin\Debug\Models.dll
+D:\Users\hasee\Source\Repos\StudentManage\Models\bin\Debug\Models.pdb
+D:\Users\hasee\Source\Repos\StudentManage\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Users\hasee\Source\Repos\StudentManage\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Users\hasee\Source\Repos\StudentManage\Models\obj\Debug\Models.dll
+D:\Users\hasee\Source\Repos\StudentManage\Models\obj\Debug\Models.pdb
